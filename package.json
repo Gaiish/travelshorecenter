@@ -1,0 +1,16 @@
+{
+  "name": "travelshorecenter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Gadi and Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
