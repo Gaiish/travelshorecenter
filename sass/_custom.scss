@@ -16,3 +16,27 @@
     background-color: $color4;
   }
 }
+.navbar{
+  margin-bottom: 0;
+}
+#carousel{
+  height: 50px !important;
+  //width: 30px;
+}
+.container{
+  margin-left: 0;
+  margin-right: 0;
+}
+form{
+
+  label{
+    color: #fff;
+    font-size: 14px;
+  }
+  .form-inline{
+    padding: 10px;
+    label{
+      width: 100px;
+    }
+  }
+}

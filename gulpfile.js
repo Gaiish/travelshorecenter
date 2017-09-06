@@ -1,11 +1,17 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass')
     notify = require('gulp-notify')
-    bower = require('gulp-bower');
+    bower = require('gulp-bower')
+    concat = require('gulp-concat')
+    uglify = require('gulp-uglify');
 
 var config = {
   sassPath: './sass',
-  bowerDir:'./bower_components'
+  bowerDir:'./bower_components',
+  js: [
+    './bower_components/jquery/src/jquery.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+  ]
 }
 gulp.task('bower', function(){
   return bower()
@@ -28,6 +34,14 @@ gulp.task('css', function() {
               return "Error: " + error.message;
           })).pipe(gulp.dest('./public/css'));
 });
+
+/*gulp.task('js', function(){
+  return gulp.src(config.js)
+              .pipe(uglify())
+              .pipe(concat('app.js'))
+              .pipe(gulp.dest('./public/js'))
+})*/
+
 gulp.task('watch', function() {
   gulp.watch(config.sassPath + '/**/*.scss', ['css']);
 });
