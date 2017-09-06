@@ -13,6 +13,12 @@ app.get('/', (req, res)=>{
   res.render('home');
 });
 
+app.get('/destinations', (req, res)=>{
+  res.render('destination')
+}
+        
+
+
 app.listen(3000, ()=>{
   console.log('Server started');
 })
