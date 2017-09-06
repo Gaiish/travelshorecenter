@@ -14,10 +14,32 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/destinations', (req, res)=>{
-  res.render('destinations')
+  res.render('destinations');
 });
 
+app.get('/packages', (req, res)=>{
+  res.render('packages');
+})
 
+app.get('/about', (req, res)=>{
+  res.render('about');
+});
+
+app.get('/book', (req, res)=>{
+  res.render('book')
+});
+
+app.get('/community', (req, res)=>{
+  res.render('community')
+});
+
+app.get('/inspiration', (req, res)=>{
+  res.render('inspiration')
+});
+
+app.get('/sustainability', (req, res)=>{
+  res.render('sustainability')
+});
 
 app.listen(3000, ()=>{
   console.log('Server started');

@@ -3,14 +3,14 @@ var gulp = require('gulp'),
     notify = require('gulp-notify')
     bower = require('gulp-bower')
     concat = require('gulp-concat')
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify');//for minifying js
 
 var config = {
   sassPath: './sass',
   bowerDir:'./bower_components',
   js: [
-    './bower_components/jquery/src/jquery.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+    './bower_components/jquery/dist/jquery.min.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   ]
 }
 gulp.task('bower', function(){
@@ -35,15 +35,14 @@ gulp.task('css', function() {
           })).pipe(gulp.dest('./public/css'));
 });
 
-/*gulp.task('js', function(){
+gulp.task('js', function(){
   return gulp.src(config.js)
-              .pipe(uglify())
               .pipe(concat('app.js'))
               .pipe(gulp.dest('./public/js'))
-})*/
+});//.pipe(uglify())
 
 gulp.task('watch', function() {
   gulp.watch(config.sassPath + '/**/*.scss', ['css']);
 });
 
-gulp.task('default', ['bower', 'icons', 'css']);
+gulp.task('default', ['bower', 'icons', 'css', 'js']);
