@@ -20,12 +20,14 @@
   margin-bottom: 0;
 }
 #carousel{
-  height: 50px !important;
-  //width: 30px;
-}
-.container{
-  margin-left: 0;
-  margin-right: 0;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .container{
+    position: absolute;
+    z-index: 999px;
+  }
 }
 form{
 
@@ -39,4 +41,20 @@ form{
       width: 100px;
     }
   }
+}
+.why-travel{
+  color: $color4;
+  font-size: 34px;
+  padding: 10px;
+}
+
+.details{
+  p{
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+.img{
+  padding-left: 0;
+  margin-left: 0;
 }

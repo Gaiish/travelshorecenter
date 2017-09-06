@@ -14,9 +14,9 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/destinations', (req, res)=>{
-  res.render('destination')
-}
-        
+  res.render('destinations')
+});
+
 
 
 app.listen(3000, ()=>{
