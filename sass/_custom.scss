@@ -114,6 +114,7 @@ hr{
   border-width: 2px;
 }
 .pre-footer{
+  padding: 15px;
   .fa{
     color: #fff;
     background-color: $color3;
@@ -132,4 +133,44 @@ hr{
       font-weight: lighter;
     }
   }
+}
+#pckg-img1{
+  padding: 0;
+  width: 220px;
+  height: 400px;
+  background: url(/img/relax.jpg) -190px -20px;
+  background-repeat: no-repeat;
+}
+#pckg-img2{
+  padding: 0;
+  width: 220px;
+  height: 400px;
+  background: url(/img/extreme.jpg) -190px -20px;
+  background-repeat: no-repeat;
+}
+#pckg-img3{
+  padding: 0;
+  width: 220px;
+  height: 400px;
+  background: url(/img/adventure.jpg) -190px -20px;
+  background-repeat: no-repeat;
+}
+#pckg-img4{
+  padding: 0;
+  width: 220px;
+  height: 400px;
+  background: url(/img/culture.jpg) -190px -20px;
+  background-repeat: no-repeat;
+}
+#pckg-img5{
+  padding: 0;
+  width: 220px;
+  height: 400px;
+  background: url(/img/foodie.jpg) -190px -20px;
+  background-repeat: no-repeat;
+}
+.pckg-over{
+  width: 220px;
+  height: 400px;
+  //position: -190px -50px;
 }
