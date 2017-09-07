@@ -60,6 +60,9 @@ form{
 }
 footer{
   background-color: $color2;
+  background-image: url('/img/logo_angle.png');
+  background-position: 173% 13%;
+  background-repeat: no-repeat;
   color: #fff;
   li{
     list-style: none;
@@ -78,5 +81,55 @@ footer{
   i{
     //background-color: #fff;
     //color: blue;
+  }
+  .fa-cc-amex{
+    color:#007bc1;
+  }
+  .fa-cc-mastercard{
+    color:#0a3a82;
+  }
+  .fa-cc-paypal{
+    color:#253b80;
+  }
+  .fa-cc-visa{
+    color:#0157a2;
+  }
+  select{
+    height: 40px;
+    width:120px;
+    color: $color2;
+    font-size: 18px;
+    option{
+      background-color: #fff;
+    }
+  }
+}
+.money{
+  .fa{
+    background-color: #fff;
+  }
+}
+hr{
+  border-color: $color1;
+  border-width: 2px;
+}
+.pre-footer{
+  .fa{
+    color: #fff;
+    background-color: $color3;
+  }
+  h2{
+    color: $color4;
+    font-weight: 900;
+  }
+  .rBorder{
+    border-right: 3px solid $color4;
+    margin-top:15px;
+    margin-bottom: 15px;
+  }
+  .thin{
+    h2{
+      font-weight: lighter;
+    }
   }
 }
