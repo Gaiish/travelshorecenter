@@ -19,21 +19,26 @@
 .navbar{
   margin-bottom: 0;
 }
-#carousel{
-  position: relative;
+#trip-search{
+  position: absolute;
+  top: 25%;
+  left: 8%;
   img{
     width: 100%;
   }
-  .container{
-    position: absolute;
-    z-index: 999px;
+  .col-md-5{
+    background: transparentize($color3, 0.3);
+    border-radius: 5px;
+    padding: 18px;
   }
 }
+#carTrip{
+  position: relative;
+}
 form{
-
   label{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-inline{
     padding: 10px;
